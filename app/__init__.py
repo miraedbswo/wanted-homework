@@ -4,7 +4,6 @@ from flask import Flask
 def register_extension(flask_app: Flask):
     from app import extension
     extension.db.init_app(flask_app)
-    extension.babel.init_app(flask_app)
 
 
 def register_hooks(flask_app: Flask):
